@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3 {
   font-family: Overpass Mono;
-  letter-spacing: -.5px;
+  letter-spacing: -.75px;
   text-transform: uppercase;
 }
 
@@ -40,7 +40,6 @@ header ul li {
 }
 
 header ul a {
-  // background: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +55,8 @@ header ul a:hover {
 }
 
 header ul a img {
-  // height: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 .header__logo {
@@ -67,4 +67,22 @@ header ul a img {
 
 .header__title {
   margin-bottom: 5px;
+}
+
+.post {
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.post:last-of-type {
+  border: none;
+  margin: 0;
+}
+
+.post__date {
+  display: block;
+  font-family: Overpass Mono;
+  margin: 15px 0 15px;
+  text-align: right;
 }
