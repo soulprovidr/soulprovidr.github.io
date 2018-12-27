@@ -107,8 +107,16 @@ header ul a img {
   }
 
   header ul li {
-    width: auto !important;
+    width: 35px !important;
+    height: 35px !important;
+    margin-left: 5px;
   }
+
+  header ul a img {
+    width: 35px;
+    height: 35px;
+  }
+  
 
   .post:last-of-type {
     border: none;
