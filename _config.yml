@@ -1,3 +1,4 @@
 title: Soul Provider
 description: Healing the world through the power of funk, soul, and software.
 logo: ./assets/img/logo.svg
+permalink: :year-:month-:day-:title:output_ext

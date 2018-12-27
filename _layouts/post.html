@@ -2,4 +2,12 @@
 layout: default
 ---
 
-{% include post.html post=page %}
+<div class="post">
+  <h2 class="post__title">
+    <a href="{{ page.url }}">
+      {{ page.title }}
+    </a>
+  </h2>
+  {{ content }}
+  <small class="post__date">- {{ page.date | date: "%B %-d, %Y" }}</small>
+</div>
