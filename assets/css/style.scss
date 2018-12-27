@@ -87,7 +87,7 @@ header ul a img {
   text-align: right;
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 813px) {
   header {
     text-align: center;
   }
@@ -107,14 +107,14 @@ header ul a img {
   }
 
   header ul li {
-    width: 35px !important;
-    height: 35px !important;
+    width: 30px !important;
+    height: 30px !important;
     margin-left: 5px;
   }
 
   header ul a img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   
 
