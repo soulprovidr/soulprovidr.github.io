@@ -3,11 +3,25 @@ layout: default
 ---
 
 <div class="post">
-  <h2 class="post__title">
-    <a href="{{ page.url }}">
-      {{ page.title }}
-    </a>
-  </h2>
+  <div class="post__header">
+    <h2 class="post__title">
+      <a href="{{ page.url }}">
+        {{ page.title }}
+      </a>
+    </h2>
+    {% if page.location %}
+    <p class="post__location">
+      <a
+        href="{{ page.location_url }}"
+        target="_blank"
+      >
+        <img src="{{ "/assets/img/icons/location.svg" | relative_url }}"> {{ page.location }}
+      </a>
+    </p>
+    {% endif %}
+  </div>
   {{ content }}
-  <small class="post__date">- {{ page.date | date: "%B %-d, %Y" }}</small>
+  <small class="post__date">
+    - {{ page.date | date: "%B %-d, %Y" }}
+  </small>
 </div>

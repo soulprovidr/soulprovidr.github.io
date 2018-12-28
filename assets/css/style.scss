@@ -3,6 +3,11 @@
 
 @import "jekyll-theme-minimal";
 
+@keyframes scaleIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -63,6 +68,8 @@ header ul a img {
   border-radius: 50%;
   width: 45%;
   margin-bottom: 15px;
+  animation: scaleIn .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: backwards;
 }
 
 .header__title {
@@ -73,11 +80,40 @@ header ul a img {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
   margin-bottom: 40px;
+  word-wrap: break-word;
 }
 
 .post:last-of-type {
   border: none;
   margin: 0;
+}
+
+.post__header {
+  margin-bottom: 15px;
+}
+
+.post__title {
+  margin-bottom: 10px;
+}
+
+.post__location {
+  display: flex;
+  align-items: center;
+}
+
+.post__location a {
+  color: #588196;
+}
+
+.post__location a:hover {
+  text-decoration: none;
+}
+
+.post__location img {
+  width: 18px;
+  height: 18px;
+  margin: 0 2px 2px 0;
+  vertical-align: middle;
 }
 
 .post__date {
