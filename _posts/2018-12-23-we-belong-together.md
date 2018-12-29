@@ -1,6 +1,7 @@
 ---
 title: Mariah Carey - We Belong Together (Cover)
 layout: post
+category: music
 ---
 
 My rendition of a classic Mariah track.

@@ -1,6 +1,7 @@
 ---
 title: Put An Egg On It
 layout: post
+category: photos
 location: The Tallest Poppy
 location_url: https://thetallestpoppy.com
 ---
