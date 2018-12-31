@@ -193,9 +193,17 @@ header ol.categories {
     }
   }
 
-  .post:last-of-type {
-    border: none;
-    margin: 0;
+  .post {
+
+    &:last-of-type {
+      border: none;
+      margin: 0;
+    }
+
+    p:not(.post__location) img {
+      max-width: calc(100% + 50px);
+      margin: 0 -25px;
+    }
   }
 
   section {
