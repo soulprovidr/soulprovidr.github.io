@@ -200,7 +200,9 @@ header ol.categories {
       margin: 0;
     }
 
-    p:not(.post__location) img {
+    p:not(.post__location) img,
+    video {
+      width: calc(100% + 50px);
       max-width: calc(100% + 50px);
       margin: 0 -25px;
     }
