@@ -1,5 +1,5 @@
 ---
-title: "The Mood® (vol. 1)"
+title: "Naija Groove"
 layout: post
 category: music
 ---
